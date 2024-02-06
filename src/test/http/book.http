@@ -1,0 +1,30 @@
+### Create a Book
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "isbn": "9781617292545",
+  "title": "Spring Boot in Action",
+  "author": "Craig Walls",
+  "yearPublished": 2016
+}
+
+### Update a Book
+PATCH http://localhost:8080/books/9780451524935
+Content-Type: application/json
+
+{
+  "isbn": "9780451524935",
+  "title": "1984 2nd",
+  "author": "George Orwell",
+  "yearPublished": 2023
+}
+
+### Get All Books
+GET http://localhost:8080/books
+
+### Get a Book by ID
+GET http://localhost:8080/books/9780345339683
+
+### Delete a Book by ID
+DELETE http://localhost:8080/books/9780345339683
